@@ -9,3 +9,7 @@ resource "aws_sqs_queue" "terraform_queue" {
   #fifo_queue = true
 }
 
+resource "aws_sqs_queue" "terraform_queue2" {
+  name = var.q2_name
+  #fifo_queue = true
+}

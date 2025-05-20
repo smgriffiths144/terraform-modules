@@ -16,3 +16,9 @@ variable "q_name" {
   type        = string
   default     = "default"
 }
+
+variable "q2_name" {
+  description = "Name of the q. Must be unique."
+  type        = string
+  default     = "default"
+}

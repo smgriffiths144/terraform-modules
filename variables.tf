@@ -14,5 +14,5 @@ variable "tags" {
 variable "q_name" {
   description = "Name of the q. Must be unique."
   type        = string
-  default     = "default-q-name-v3"
+  default     = "default"
 }

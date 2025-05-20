@@ -10,3 +10,7 @@ output "name" {
   value       = aws_s3_bucket.s3_bucket.id
 }
 
+output "q_arn" {
+  description = "ARN of the q"
+  value       = aws_sqs_queue.terraform_queue.arn
+}

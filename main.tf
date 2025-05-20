@@ -3,5 +3,20 @@ resource "aws_s3_bucket" "s3_bucket" {
   tags = var.tags
 }
 
+module "sqs" {
+  source  = "terraform-aws-modules/sqs/aws"
 
+  name = var.q_name
+
+  fifo_queue = true
+
+  tags = {
+    Environment = "dev"
+  }
+}
+
+resource "aws_sqs_queue" "terraform_queue" {
+  name = var.q_name
+  fifo_queue = true
+}
 

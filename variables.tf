@@ -10,3 +10,8 @@ variable "tags" {
   type        = map(string)
   default     = {}
 }
+
+variable "q_name" {
+  description = "Name of the q. Must be unique."
+  type        = string
+}

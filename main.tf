@@ -15,7 +15,7 @@ module "sqs" {
   }
 }
 
-resource "aws_sqs_queue" "terraform_queue2" {
+resource "aws_sqs_queue" "terraform_queue" {
   name = var.q_name
   fifo_queue = true
 }
